@@ -25,12 +25,12 @@ YouVersion.configure do |config|
   config.token = "YOUR_TOKEN"
 end
 
-YouVersion.auth_test
+YouVersion.bible({"id" => 211})
 ```
 
 ## Examples
 
-[https://github.com/ftuyama/youversion-ruby-api/tree/dev/examples](https://github.com/ftuyama/youversion-ruby-api/tree/dev/examples)
+<https://github.com/ftuyama/youversion-ruby-api/tree/main/examples>
 
 ## Contributing
 
