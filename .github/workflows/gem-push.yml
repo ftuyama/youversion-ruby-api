@@ -17,9 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up Ruby 3.1
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.1.2
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
     - name: Publish to GPR
       run: |

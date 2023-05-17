@@ -18,7 +18,7 @@ WebMock.disable_net_connect!(allow_localhost: true)
 module Helpers
   def valid_token
     $stderr.puts "Please set valid_token to ENV['TOKEN']" if ENV['TOKEN'].nil?
-    @token ||= ENV['TOKEN'] || (print "Token: "; gets.strip)
+    @token ||= ENV['TOKEN'] || 'TOKEN'
   end
 
   def valid_client
